@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Acknowledgement';
+  src:  url('fonts/Acknowledgement/Acknowledgement.eot');
+  src:  url('fonts/Acknowledgement/Acknowledgement.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Acknowledgement/Acknowledgement.woff2') format('woff2'),
+        url('fonts/Acknowledgement/Acknowledgement.woff') format('woff'),
+        url('fonts/Acknowledgement/Acknowledgement.tff') format('truetype'),
+        url('fonts/Acknowledgement/Acknowledgement.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'Butler Stencil Regular';
+  src:  url('fonts/Butler Stencil/Regular/Butler_Regular_Stencil.eot');
+  src:  url('fonts/Butler Stencil/Regular/Butler_Regular_Stencil.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Butler Stencil/Regular/Butler_Regular_Stencil.woff2') format('woff2'),
+        url('fonts/Butler Stencil/Regular/Butler_Regular_Stencil.woff') format('woff'),
+        url('fonts/Butler Stencil/Regular/Butler_Regular_Stencil.tff') format('truetype'),
+        url('fonts/Butler Stencil/Regular/Butler_Regular_Stencil.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src:  url('fonts/Open Sans/Regular/OpenSansRegular.eot');
+  src:  url('fonts/Open Sans/Regular/OpenSansRegular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Open Sans/Regular/OpenSansRegular.woff2') format('woff2'),
+        url('fonts/Open Sans/Regular/OpenSansRegular.woff') format('woff'),
+        url('fonts/Open Sans/Regular/OpenSansRegular.tff') format('truetype'),
+        url('fonts/Open Sans/Regular/OpenSansRegular.svg#svgFontName') format('svg');
+}

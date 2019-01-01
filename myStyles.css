@@ -1,0 +1,203 @@
+#menuIcon {
+  float: left;
+  display: inline
+}
+
+#brandImage {
+  display: none
+}
+
+#brandName {
+  display: inline;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
+  text-align:center
+}
+
+#portfolioLink {
+  display: none
+}
+
+#aboutMeLink {
+  display: none
+}
+
+#resumeLink {
+  display: none
+}
+
+
+@media (min-width: 601px){
+  
+  #menu {
+    display: table
+  }
+  
+  #brandImage {
+    display: table-cell
+  }
+
+  #brandName {
+    display: none
+  }
+
+  #portfolioLink {
+    display: table-cell;
+  }
+  
+  #aboutMeLink {
+    display: table-cell;
+  }
+  
+  #resumeLink {
+    display: table-cell;
+  }
+  
+  #menuIcon {
+    display: none
+  }
+}
+
+
+@media (min-width: 993px) {
+  
+  #menu {
+    display: table
+  }
+  
+  #brandImage {
+    display: table-cell
+  }
+
+  #brandName {
+    display: table-cell;
+    position:absolute;
+    top:50%;
+    left:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%);
+    text-align:left
+  }
+
+  #portfolioLink {
+    display: table-cell;
+  }
+  
+  #aboutMeLink {
+    display: table-cell;
+  }
+  
+  #resumeLink {
+    display: table-cell;
+  }
+  
+  #menuIcon {
+    display: none
+  }
+}
+
+
+#sideNav {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#sideNav a, #sideNav header, #sidebar button, #sidebar h2 {
+  transition: 0.3s;
+}
+
+
+#main {
+  overflow: hidden;
+  width: 100%;
+}
+
+#pageHeading {
+  overflow: hidden;
+}
+
+
+#main, .sideNavTransition, #pageHeading {
+  -webkit-transition: margin-left 0.5s;
+  -moz-transition: margin-left 0.5s;
+  -o-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+}
+
+#pageHeading h1, #pageHeading h2 {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+
+#pageHeading h1 {
+  font-family: 'Acknowledgement', 'Arial Black', sans-serif;
+  font-size: 35px;
+}
+
+#pageHeading h2 {
+  font-family: 'Open Sans Regular', 'Arial', sans-serif;
+  font-size: 20px;
+}
+
+#navigation {
+  font-family: 'Butler Stencil Regular', 'Arial Narrow', sans-serif;
+}
+
+#main {
+  font-family: 'Open Sans Regular', 'Arial', sans-serif;
+  font-size: 15px;
+}
+
+#pageHeading {
+  margin-top: 16px;
+}
+
+#sideNav a {
+  text-align: left;
+}
+
+.myGrey {
+  background-color: rgba(187, 187, 187, 0.75);
+}
+
+.myGreen-1 {
+  background-color: rgba(0, 180, 12, 0.6);
+}
+
+.myPurple-1 {
+  background-color: rgba(71, 13, 156, 0.6);
+}
+
+.myYellow-1 {
+  background-color: rgba(229, 206, 0, 0.6);
+}
+
+.myGreen-2 {
+  background-color: rgba(22, 192, 101, 0.6);
+}
+
+.myYellow-2 {
+  background-color: rgba(255, 186, 29, 0.6);
+}
+
+.myBlue {
+  background-color: rgba(41, 72, 186, 0.75);
+}
+
+.myOrange {
+  background-color: rgba(255, 80, 29, 0.75);
+}
+
+.myRed {
+  background-color: rgba(174, 5, 0, 0.75);
+}

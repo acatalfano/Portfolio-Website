@@ -1,0 +1,62 @@
+#secondRow {
+	min-height: 385px;
+}
+
+#pageHeading {
+	text-align: center;
+}
+
+.listHeading {
+	text-align: center;
+	width: 100%;
+}
+
+
+#codeSkillsCard, #codeSoftwareCard, #analysisCard, #psychologyCard, #chartImage, #hiddenRow img {
+	margin: 0 auto;
+}
+
+#chartImage, #hiddenRow img {
+	display: block;
+}
+
+ul {
+	float: left;
+}
+
+
+#codeSkillsCard {
+	width: 396px;
+}
+
+#codeSkillsCard ul.leftList {
+	width: 212px;
+}
+
+#codeSkillsCard ul.rightList {
+	width: 152px;
+}
+
+#codeSoftwareCard {
+	width: 299px;
+}
+
+#codeSoftwareCard ul {
+	width: 159px;
+}
+
+#analysisCard {
+	width: 290px;
+}
+
+#analysisCard ul {
+	width: 256px;
+}
+
+#psychologyCard {
+	width: 229px;
+}
+
+#psychologyCard ul {
+	width: 196px;
+}

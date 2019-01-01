@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Adam Catalfano</title>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="myFonts.css">
+    
+    <link rel="stylesheet" href="w3css-4-04-compressed.css">
+    
+    <link rel="stylesheet" href="myStyles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    
+    <script src="init_navbar.js"></script>
+    <script src="index.js"></script>
+    <script src="smoothScroll.js"></script>
+    
+    <style>
+      .bgSection {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        -webkit-transition: -webkit-transform 0.3s;
+        -moz-transition: -moz-transform 0.3s;
+        -o-transition: -o-transform 0.3s;
+        transition: transform 0.3s;
+      }
+      
+      .bgSection:hover {
+        -ms-transform: scale(1.1,1.1);
+        -webkit-transform: scale(1.1,1.1);
+        -moz-transform: scale(1.1,1.1);
+        -o-transform: scale(1.1,1.1);
+        transform: scale(1.1,1.1);
+        opacity:1;
+      }
+
+      .bgimg-1 {
+        background-image: url('images/wireframes/butterfly_warriors_wireframe.png');
+      }
+
+      .bgimg-2 {
+        background-image: url('images/prototypes/butterfly_warriors_interactive_prototype.png');
+      }
+
+      .bgimg-3 {
+        background-image: url('images/finals/butterfly_warriors_form_screenshot.png');
+      }
+
+      @media only screen and (max-device-width: 1024px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: scroll;
+        }
+      }
+
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          -ms-transform: translateY(0);
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        40% {
+          -ms-transform: translateY(-30px);
+          -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+        }
+        60% {
+          -ms-transform: translateY(-15px);
+          -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+      }
+
+      .myBounce {
+        animation: bounce 2s infinite;
+      }
+      
+      
+      
+      #notebookContainer {
+        padding: 0;
+        text-align: center;
+      }
+      
+      
+      
+      .notebookFrame {
+        height: 100%;
+        width:  100%;
+        text-align: center;
+        padding: 0;
+        white-space: nowrap;
+      }
+      
+      
+      
+      .notebookHelper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+      
+      
+      
+      .notebookImage {
+        vertical-align: middle;
+        
+      }
+      
+      
+      .parallax-content {
+        text-align: center;
+      }
+      
+      
+      .parallax-content h4 {
+        font-size: 45px!important;
+      }
+      
+      .parallax-content h4, .parallax-content p {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+      
+      
+      .parallax-content p {
+        font-size: 20px!important;
+      }
+      
+    </style>
+  </head>
+  
+  <body>
+    <!--navbar is inserted here-->
+    
+    
+    <div id="main" class="w3-container">
+      
+      <div id="pageHeading" class="w3-container w3-card-2 w3-padding-16 myGreen-1">
+        <h1>PORTFOLIO</h1>
+        <h2>HELLO! I'M ADAM CATALFANO AND WELCOME TO MY PORTFOLIO!</h2>
+        <h2>
+          I recently graduated from the University of Michigan with a degree in Cognitive Science. 
+          My background is extensively in Computer Science and Cognitive Psychology
+          and I have a knack for the creative mindset and making problems disappear
+        </h2>
+      </div>
+      
+      <!--Notebook images-->  
+      <div id="notebookContainer" class="w3-container w3-row">
+        <div id="notebookSpacer" class="w3-container w3-col l3 w3-hide-medium w3-hide-small"></div>
+        
+        <div id="blankNotebook" class="w3-container w3-col l6 s12 notebookFrame w3-hide w3-show">
+          <span id="helper" class="notebookHelper"></span>
+          <img id="nbImage" class="notebookImage" alt="blank notebook image" src="images/blank_notebook.png">
+        </div>
+        <div id="portfolioNotebook" class="w3-container w3-col l6 s12 notebookFrame w3-hide">
+          <span class="notebookHelper"></span>
+          <img class="notebookImage" alt="portfolio notebook image" src="images/portfolio_notebook.png">
+        </div>
+        
+        <div id="aboutMeNotebook" class="w3-container w3-col l6 s12 m12 notebookFrame w3-hide">
+          <span class="notebookHelper"></span>
+          <img class="notebookImage" alt="about me notebook image" src="images/aboutMe_notebook.png">
+        </div>
+        
+        <div id="resumeNotebook" class="w3-container w3-col l6 s12 m12 notebookFrame w3-hide">
+          <span class="notebookHelper"></span>
+          <img class="notebookImage" alt="resume notebook image" src="images/resume_notebook.png">
+        </div>
+        
+        <div id="arrowContainer" class="w3-container w3-col l3 w3-hide-medium w3-hide-small">
+          <a href="#wireframesContent"><i id="arrowIcon" class="fa fa-arrow-down w3-xxxlarge myBounce"></i></a>
+        </div>
+        
+      </div>
+      
+      
+      <div id="wireframesContent" class="w3-container parallax-content w3-card-2 myPurple-1">
+        <h4>WIREFRAMES</h4>
+        <p>These are some portions of the wireframes I've made in planning my websites. 
+           Wireframes are critical to my design process&mdash;they show how the design will roughly look
+           and suggest how it can potentially feel</p>
+      </div>
+      
+      <!--BG Image: Wireframes-->
+      <div id="wireframesBG" class="bgSection bgimg-1 w3-display-container w3-opacity-min" onclick="displayModal('wireframes')"></div>
+      
+      
+      <div id="prototypesContent" class="w3-container parallax-content w3-card-2 myYellow-1">
+        <h4>PROTOTYPES</h4>
+        <p>I next turn my wireframe into an interactive prototype. 
+           This is the point where the design's "feel" matures and it can more clearly be demonstrated
+           what a typical user-interaction would be like</p>
+      </div>
+            
+      
+      <!--BG Image: Prototypes-->
+      <div id="prototypesBG" class="bgSection bgimg-2 w3-display-container w3-opacity-min" onclick="displayModal('prototypes')"></div>
+      
+      <div id="finalsContent" class="w3-container parallax-content w3-card-2 myBlue">
+        <h4>FINAL PRODUCTS</h4>
+        <p>It had to happen sometime and there's no time like the present! 
+           My next step is to develop my prototypes into the actual final product. 
+           This is where the functionality recieves less attention (because it had darn well better be
+           figured out at this point) and the aesthetics steal the spotlight. 
+           Perhaps most noticably, this is where color is finally added!</p>
+      </div>
+      
+      
+      <!--BG Image: Finals-->
+      <div id="finalsBG" class="bgSection bgimg-3 w3-display-container w3-opacity-min" onclick="displayModal('finals')"></div>
+      
+      
+      <div class="w3-padding"></div>
+      
+      
+      
+      <!--Modal: Wireframes-->
+      <div id="wireframesModal" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-content w3-display-container">
+            
+            <div class="wireframesSlides">
+              <div class="w3-row">
+                <img src="images/wireframes/about_alternate_wireframe.png" style="width:100%">
+              </div>
+              <div class="w3-row w3-container w3-black">
+                The "About Me" page of this website.  Some things are subject to change, but the general
+                layout remained consistent for the most part.
+              </div>
+            </div>
+            
+            <div class="wireframesSlides">
+              <div class="w3-row">
+                <img src="images/wireframes/about_original_wireframe.png" style="width:100%">
+              </div>
+              <div class="w3-row w3-container w3-black">
+                An alternate consideration for the "About Me" page of this website.  This became a part of a
+                version of an A/B test with a small subject pool of whoever was available.
+              </div>
+            </div>
+            
+            <div class="wireframesSlides">
+              <div class="w3-row">
+                <img src="images/wireframes/butterfly_warriors_wireframe.png" style="width:100%">
+              </div>
+              <div class="w3-row w3-container w3-black">
+                The "Donate" page for my project with The St. Clair Butterly Foundation, under the "View Donation History"
+                sidebar option. This is only accessible to logged-in members. The various members' donations are displayed here
+              </div>
+            </div>
+            
+            <div class="wireframesSlides">
+              <div class="w3-row">
+                <img src="images/wireframes/resume_alternate_wireframe_sketch.png" style="width:100%">
+              </div>
+              <div class="w3-row w3-container w3-black">
+                This was a consideration for the "R&eacute;sum&eacute;" page for this website. This version
+                did not stay because I didn't like the (lack of) usability
+              </div>
+            </div>
+            
+            <div class="wireframesSlides">
+              <div class="w3-row">
+                <img src="images/wireframes/resume_original_wireframe_sketch.png" style="width:100%">
+              </div>
+              <div class="w3-row w3-container w3-black">
+                Another consideration for the "R&eacute;sum&eacute;" page for this website. I used the previous version
+                and this version in a version of an A/B (like with the "About Me" pages) to see if having the sidebar menu
+                placed beneath the "R&eacute;sum&eacute;" button (which should be the last item clicked before landing on this page)
+                affected the usability.  It did, but not enough to meet my standards.
+              </div>
+            </div>
+            
+            <span class="wireframesModalBtn w3-button w3-display-topright" onclick="closeModal()">&times;</span>
+            <button class="wireframesModalBtn w3-button w3-display-left w3-black" onclick="transition('wireframes', -1)">&#10094;</button>
+            <button class="wireframesModalBtn w3-button w3-display-right w3-black" onclick="transition('wireframes', 1)">&#10095;</button>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      <!--Modal: Prototypes-->
+      <div id="prototypesModal" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-content w3-display-container">
+            
+            <div class="prototypesSlides">
+              <div class="w3-row">
+                <img src="images/prototypes/butterfly_warriors_interactive_prototype.png" style="width:100%">
+              </div>
+              <div class="w3-row w3-container w3-black">
+                This is the "Donate" page (under the "Become a Member Today" sidebar option) for my project with
+                The St. Clair Butterfly Foundation.
+              </div>
+            </div>
+            
+            <div class="prototypesSlides">
+              <div class="w3-row">
+                <img src="images/prototypes/portfolio_home_interactive_prototype.png" style="width:100%">
+              </div>
+              <div class="w3-row w3-container w3-black">
+                Look familiar?  This is the page you are currently viewing!
+                Don't get confused by the inside arrows and &times; button
+              </div>
+            </div>
+            
+            <span class="prototypesModalBtn w3-button w3-display-topright" onclick="closeModal()">&times;</span>
+            <button class="prototypesModalBtn w3-button w3-display-left w3-black" onclick="transition('prototypes', -1)">&#10094;</button>
+            <button class="prototypesModalBtn w3-button w3-display-right w3-black" onclick="transition('prototypes', 1)">&#10095;</button>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      <!--Modal: Finals-->
+      <div id="finalsModal" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-content w3-display-container">
+            
+            <div class="finalsSlides">
+              <div class="w3-row">
+                <img src="images/finals/butterfly_warriors_form_screenshot.png" style="width:100%">
+              </div>
+              <div class="w3-row w3-container w3-black">
+                This is the final product for the "Become a Member Today" section of the "Donate" page from
+                my project with The St. Clair Butterfly Foundation. The prototype of this page was previously featured
+              </div>
+            </div>
+            
+            <div class="finalsSlides">
+              <div class="w3-row">
+                <img src="images/finals/butterfly_warriors_screenshot.png" style="width:100%">
+              </div>
+              <div class="w3-row w3-container w3-black">
+                This is the final product for the "Make A Donation" sidebar option for a logged-in member's "Donate" page.
+                There are various ways by which the donations can be sorted, including "Date," "Name," and "Amount."  This
+                gamification borrows motivation principles from the psychological need for status
+              </div>
+            </div>
+            
+            <span class="finalsModalBtn w3-button w3-display-topright" onclick="closeModal()">&times;</span>
+            <button class="finalsModalBtn w3-button w3-display-left w3-black" onclick="transition('finals', -1)">&#10094;</button>
+            <button class="finalsModalBtn w3-button w3-display-right w3-black" onclick="transition('finals', 1)">&#10095;</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-US" style="height:100%">
+  <head>
+    <title>Adam Catalfano &mdash; Resume</title>
+      
+    <meta charset="UTF-8">
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="myFonts.css">
+    
+    <link rel="stylesheet" href="w3css-4-04-compressed.css">
+    
+    <link rel="stylesheet" href="myStyles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    
+    <script src="init_navbar.js"></script>
+    
+    <style>
+      .sub-accordian button {
+        padding-left: 30px;
+        padding-top:  15px;
+      }
+      
+      
+      .one-column-content {
+        padding-left:  30%;
+        padding-right: 30%;
+      }
+      
+      
+      .embolden, [id$="Content"] p:first-child { font-weight: bold; }
+      
+      
+      #personalExperienceContent p:first-child { font-weight: normal; }
+      
+      
+      ul { padding-left: 15px; }
+      
+      
+      .myTopButton {
+        background-color: #F7CE5B;
+        color: #000;
+      }
+      
+      
+      .italicize { font-style: italic; }
+      
+      
+      .w3-display-container { padding-bottom: 16px; }
+      
+      .myButton { white-space: normal; }
+      
+    </style>
+  </head>
+  <body>
+    <!--navbar is inserted here-->
+    
+    <div id="main" class="w3-container">
+      
+      <div id="pageHeading" class="w3-container w3-card-2 w3-padding-16 myGreen-1">
+        <h1>R&Eacute;SUM&Eacute;</h1>
+        <h2>A Detailed Overview of What I've Done, What I Can Do, And How to Contact Me</h2>
+      </div>
+      
+      <div class="w3-container w3-padding-32 w3-row">
+        
+        <div class="w3-container w3-half" style="text-align:center;margin-top:16px"> 
+          <a class="w3-button myTopButton" href="resume.pdf" download>DOWNLOAD RESUME AS A PDF</a>
+        </div>
+        <div class="w3-container w3-half" style="text-align:center;margin-top:16px">
+          <a class="w3-button myTopButton" href="https://www.linkedin.com/in/adam-catalfano/">VISIT ME ON LinkedIn</a>
+        </div>
+      </div>
+      
+      <div class="w3-padding-32"></div>
+      
+      <!--GENERAL-->
+      <button class="w3-button w3-block w3-black w3-left-align w3-xlarge myButton" onclick="toggle('#generalContent')">GENERAL</button>
+      <div id="generalContent" class="w3-hide w3-container myGrey w3-show w3-cell w3-center one-column-content">
+        <p>
+           Adam Catalfano</p>
+        <p>22220 Barclay Drive <br>
+           Novi, MI 48374</p>
+        <p>(248) 231 7058</p>
+        <p>adamcata@umich.edu</p>
+        <p>B.S. in Cognitive Science (Computation)</p>
+        <p>Cumulative GPA: 3.114</p>
+        <p>My objective is to obtain a job related to Quality Assurance, Software Engineering or UX Design or Research
+          so that I can integrate my programming and task-oriented skills with my cognitive and goal-oriented skills</p>
+      </div>
+      
+      
+      <!--SKILLS-->
+      <button class="w3-button w3-block w3-black w3-left-align w3-xlarge myButton" onclick="toggle('#skillsContent')">SKILLS</button>
+      <div id="skillsContent" class="w3-hide w3-container w3-row myGrey">
+        <div class="w3-container w3-col w3-half">
+          <p style="padding-left:25%">COMPUTER SKILLS</p>
+          <div class="w3-container w3-row">
+            <div class="w3-container w3-col l6 s12">
+              <ul>
+                <li>Axure</li>
+                <li>HTML 5</li>
+                <li>CSS 3</li>
+                <li>Javscript</li>
+                <li>Responsive Web<br>
+                  Design</li>
+                <li>Adobe Illustrator</li>
+                <li>Eclipse IDE</li>
+                <li>MS Visual Studio</li>
+                <li>MS Office</li>
+              </ul>
+            </div>
+            <div class="w3-container w3-col l6 s12">
+              <ul>
+                <li>C++/C</li>
+                <li>Python</li>
+                <li>Linux</li>
+                <li>Windows</li>
+                <li>Mac OS X</li>
+                <li>g++</li>
+                <li>gdb</li>
+                <li>valgrind</li>
+                <li>gprof</li>
+                <li>SVN</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="w3-container w3-col w3-half">
+          <p style="padding-left:25%">SPECIALTY SKILLS</p>
+          <div class="w3-container w3-row">
+            <div class="w3-container w3-col l6 s12">
+              <ul>
+                <li>Statistics</li>
+                <li>Probability Theory</li>
+                <li>Cognitive<br>
+                  Psychology</li>
+                <li>Neuropsychology</li>
+                <li>Psycholinguistics</li>
+              </ul>
+            </div>
+            <div class="w3-container w3-col l6 s12">
+              <ul>
+                <li>Formal Writing</li>
+                <li>Formal Speaking</li>
+                <li>Informal Writing</li>
+                <li>Informal Speaking</li>
+                <li>Artificial Intelligence</li>
+                <li>Machine Learning</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <!--PROFESSIONAL EXPERIENCE-->
+      <button class="w3-button w3-block w3-black w3-left-align w3-xlarge myButton" onclick="toggle('#professionalExperienceContent')">
+        PROFESSIONAL EXPERIENCE
+      </button>
+      <div id="professionalExperienceContent" class="w3-hide w3-container sub-accordian" style="padding:0">
+        
+        <!--ST. CLAIR BUTTERFLY FOUNDATION-->
+        <button class="w3-button w3-block w3-blue-grey w3-large myButton" onclick="subToggle('#stClairContent')">
+          <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-left-align">
+              <span class="embolden">St. Clair Butterfly Foundation</span><br>
+              <span class="italicize">Farmington Hills, MI</span>
+            </div>
+            
+            <div class="w3-container w3-cell w3-right-align w3-hide-medium w3-hide-small">
+              April-Sept. 2016
+            </div>
+          </div>
+        </button>
+        <div id="stClairContent" class="w3-hide w3-container myGrey one-column-content">
+          <p>Web Designer</p>
+          <ul>
+            <li>Built a website from the group up for managing publicity and donations</li>
+            <li>Implemented Bootstrap, CSS 3, and HTML 5 to build a grid-based responsive website</li>
+            <li>Designed Ajax, Javascript, and HTML 5 animations to give the site a modern look and feel</li>
+            <li>Integrated PHP and MySQL to give the site robust functionality</li>
+          </ul>
+        </div>
+        
+        <!--FORD MOTOR COMPANY-->
+        <button class="w3-button w3-block w3-blue-grey w3-large myButton" onclick="subToggle('#fordContent')">
+          <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-left-align">
+              <span class="embolden">Ford Motor Company</span><br>
+              <span class="italicize">Dearborn, MI</span>
+            </div>
+            
+            <div class="w3-container w3-cell w3-right-align w3-hide-medium w3-hide-small">
+              April-Sept. 2013
+            </div>
+          </div>
+        </button>
+        <div id="fordContent" class="w3-hide w3-container myGrey one-column-content">
+          <p>Lab Tech Intern</p>
+          <ul>
+            <li>Captured, compiled, and processed motion-tracking data so the analysis team
+              had neat and tidy data to work with and could get right to analyzing</li>
+            <li>Composed a short tutorial on how to use the Vicon Nexus software so other
+              lab members could easily navigate it</li>
+          </ul>
+        </div>
+        
+        <!--UMHS REHAB ENGINEERING-->
+        <button class="w3-button w3-block w3-blue-grey w3-large myButton" onclick="subToggle('#UMHSRehabEngrContent')">
+          <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-left-align">
+              <span class="embolden">U of M Health System&mdash;Rehabilitation Engineering</span><br>
+              <span class="italicize">Ann Arbor, MI</span>
+            </div>
+            <div class="w3-container w3-cell w3-right-align w3-hide-medium w3-hide-small">
+              Nov. 2011-April 2012
+            </div>
+            </div>
+        </button>
+        <div id="UMHSRehabEngrContent" class="w3-hide w3-container myGrey one-column-content">
+          <p>Intern</p>
+          <ul>
+            <li>Altered C++ source code in BCI2000 to implement the Checkerboard Paradigm (CBP)</li>
+            <li>CBP made for easier usability and improved efficacy over the standard Row-Column Paradigm (RCP)</li>
+            <li>Contributed to board meetings</li>
+          </ul>
+        </div>
+        
+        <!--NVOC-->
+        <button class="w3-button w3-block w3-blue-grey w3-large myButton" onclick="subToggle('#NVOCContent')">
+          <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-left-align">
+              <span class="embolden">Nature's Voice Our Choice (NVOC)</span><br>
+              <span class="italicize">Ann Arbor, MI</span>
+            </div>
+            
+            <div class="w3-container w3-cell w3-right-align w3-hide-medium w3-hide-small">
+              June-Sept. 2010
+            </div>
+          </div>
+        </button>
+        <div id="NVOCContent" class="w3-hide w3-container myGrey one-column-content">
+          <p>Intern</p>
+          <ul>
+            <li>Constructed a website to function as NVOC's public and social image</li>
+          </ul>
+        </div>
+        
+        <!--UMHS NEUROPSYCH-->
+        <button class="w3-button w3-block w3-blue-grey w3-large myButton" onclick="subToggle('#UMHSNeuropsychContent')">
+          <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-left-align">
+              <span class="embolden">U of M Health System&mdash;Neuropsychology Program</span><br>
+              <span class="italicize">Ann Arbor, MI</span>
+            </div>
+            
+            <div class="w3-container w3-cell w3-right-align w3-hide-medium w3-hide-small">
+              July-Sept. 2010
+            </div>
+          </div>
+        </button>
+        <div id="UMHSNeuropsychContent" class="w3-hide w3-container myGrey one-column-content">
+          <p>Intern</p>
+          <ul>
+            <li>Worked out kinks in text-to-speech software so it was ready to be used in conducting attention-based usability research</li>
+            <li>Sat in on interview research sessions on various subjects</li>
+            <li>Contributed to board meetings</li>
+          </ul>
+        </div>
+      </div>
+      
+      
+      <!--PERSONAL EXPERIENCE-->
+      <button class="w3-button w3-block w3-black w3-left-align w3-xlarge myButton" onclick="toggle('#personalExperienceContent')">PERSONAL EXPERIENCE</button>
+      <div id="personalExperienceContent" class="w3-hide w3-container w3-row myGrey">
+        <div class="w3-container w3-col w3-half">
+          <p><span class="embolden">Dale Carnegie Course</span><br>
+             <span class="italicize">Ann Arbor, MI</span><br>
+            May-Aug. 2016</p>
+          
+          <ul>
+            <li>100% Attendance Award</li>
+            <li>Outstanding Performance Award</li>
+            <li>Breakthrough Award</li>
+          </ul>
+        </div>
+        
+        <div class="w3-container w3-col w3-half">
+          <p><span class="embolden">Nation Novel Writing Month</span><br>
+             <span class="italicize">Novi, MI</span><br>
+             Nov. 2010-Present</p>
+          
+          <ul>
+            <li>Crafted a 50,000-word rough draft of a novel from scratch in 30 days</li>
+            <li>Continues to drive my side-passion of creative writing and my creative mindset</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-padding-16"></div>
+     
+    </div> 
+  </body>
+  
+  <script>
+    
+    // toggle function to show or hide selected content (for all top-level accordian menu items)
+    //
+    // idName:  string in the form of '#<id_value>' where <id_value> is the value of the id
+    //      of the element to be toggled
+    function toggle(idName) {
+      // hide all '#*Content' div's besides the one that was passed as an argument
+      $('[id$="Content"]:not(' + idName + ')').removeClass('w3-show');
+      
+      // toggle to show or hide the '#*Content' div that was passed as an argument
+      if($(idName).hasClass('w3-show')) {
+        $(idName).removeClass('w3-show');
+      }
+      else {
+        $(idName).addClass('w3-show');
+      }
+    }
+    
+    
+    // toggle function to show or hide selected content (for all second-level accordian menu items
+    //                      i.e. those in the "professional experience" section)
+    //
+    // idName:  string in the form of '#<id_value>' where <id_value> is the value of the id
+    //      of the element to be toggled
+    function subToggle(idName) {
+      // hide all '#*Content' div's within the accordian sub-menu except the one that was passed as an argument
+      $('#professionalExperienceContent [id$="Content"]:not(' + idName + ')').removeClass('w3-show');
+      
+      // toggle to show or hide the '#*Content' div that was passed as an argument
+      if($(idName).hasClass('w3-show')) {
+        $(idName).removeClass('w3-show');
+      }
+      else {
+        $(idName).addClass('w3-show');
+      }
+    }
+  </script>
+</html>

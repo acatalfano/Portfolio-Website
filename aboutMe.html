@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US" style="height:100%">
+  <head>
+    <title>Adam Catalfano &mdash; About Me</title>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="myFonts.css">
+    
+    <link rel="stylesheet" href="w3css-4-04-compressed.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="myStyles.css">
+    
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    
+    <script src="init_navbar.js"></script>
+    
+    
+    <style>
+      #secondRow {
+        min-height: 385px;
+      }
+
+      #pageHeading {
+        text-align: center;
+      }
+
+      .listHeading {
+        text-align: center;
+        width: 100%;
+      }
+
+
+      #codeSkillsCard, #codeSoftwareCard, #analysisCard, #psychologyCard, #chartImage, #hiddenRow img {
+        margin: 0 auto;
+      }
+
+      #chartImage, #hiddenRow img {
+        display: block;
+      }
+
+      ul {
+        float: left;
+      }
+
+
+      #codeSkillsCard {
+        width: 396px;
+      }
+
+      #codeSkillsCard ul.leftList {
+        width: 212px;
+      }
+
+      #codeSkillsCard ul.rightList {
+        width: 152px;
+      }
+
+      #codeSoftwareCard {
+        width: 299px;
+      }
+
+      #codeSoftwareCard ul {
+        width: 159px;
+      }
+
+      #analysisCard {
+        width: 290px;
+      }
+
+      #analysisCard ul {
+        width: 256px;
+      }
+
+      #psychologyCard {
+        width: 229px;
+      }
+
+      #psychologyCard ul {
+        width: 196px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--navbar is inserted here-->
+      
+      <div id="main" class="w3-container">
+        
+        <div id="pageHeading" class="w3-container w3-card-2 w3-padding-16 myGreen-1">
+          <h1>ABOUT ME</h1>
+          <h2>These are the Things that I Do Best!</h2>
+        </div>
+        
+        <!-- row 1 -->
+        <div id="firstRow" class="w3-container w3-row w3-padding-16">
+          <!-- col 1 row 1 -->
+          <div class="w3-container w3-col l4 w3-padding-16">
+            <div id="codeSkillsCard" class="w3-container w3-card-4 myOrange">
+              <h3 class="listHeading">CODING AND DESIGN SKILLS:</h3>
+              
+              <ul class="leftList w3-container">
+                <li>HTML 5</li>
+                <li>CSS 3</li>
+                <li>Javascript</li>
+                <li>Responsive Web Design</li>
+                <li>Interactive Prototypes</li>
+              </ul>
+            
+              <ul class="rightList w3-container">
+                <li>Wireframes</li>
+                <li>C++/C</li>
+                <li>Python</li>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+              </ul>
+            </div>
+          </div>
+          
+          
+          <div class="w3-container w3-col l4"></div>
+          
+          <!-- col 2 row 1 -->
+          <div class="w3-container w3-col l4 w3-padding-16">
+            <div id="codeSoftwareCard" class="w3-container w3-card-4 myBlue">
+              <h3 class="listHeading">CODING AND DESIGN SOFTWARE:</h3>
+              
+              <ul class="w3-container">
+                <li>Axure</li>
+                <li>Adobe Illustrator</li>
+                <li>MS Office</li>
+                <li>Eclipse IDE</li>
+                <li>MS Visual Studio</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--end of row 1-->
+        
+        <div id="hiddenRow" class="w3-container w3-row w3-padding-16 w3-hide-large">
+          <div class="w3-container w3-col">
+            <img src="images/about_chart.png" alt="Pie Chart of Skills" width="100%">
+          </div>
+        </div>
+        
+        <!--row 2-->
+        <div id="secondRow" class="w3-container w3-row w3-padding-16">
+          <div class="secondRowContent w3-container w3-col l4">
+            <div id="analysisCard" class="w3-container w3-card-4 myGreen-2">
+              <h3 class="listHeading">ANALYSIS SKILLS:</h3>
+              <ul class="w3-container">
+                <li>ANOVA (F-Distribution)</li>
+                <li>Chi-Square</li>
+                <li>Regression</li>
+                <li>z-test (Normal Distribution</li>
+                <li>t-test (Student's Distribution)</li>
+                <li>Probability Theory</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="w3-container w3-col l4 w3-hide-medium w3-hide-small">
+            <img id="chartImage" src="images/about_chart.png" alt="Pie Chart of Skills">
+          </div>
+          
+          <div class="secondRowContent w3-container w3-col l4">
+            <div id="psychologyCard" class="w3-container w3-card-4 myRed">
+              <h3 class="listHeading">PSYCHOLOGY SKILLS:</h3>
+              <ul class="w3-container">
+                <li>Classical Conditioning</li>
+                <li>Operant Conditioning</li>
+                <li>Attention</li>
+                <li>Cognition</li>
+                <li>Psycholinguistics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--end of row 2-->
+      
+    </div>
+  </body>
+  <script>
+      $(document).ready(function(){
+        $(window).load(aboutMeResize);
+        $(window).resize(aboutMeResize);
+      });
+      
+      function aboutMeResize() {
+        if( $(window).height() > 900 ) {
+          $(document.getElementById("secondRow")).outerHeight($(window).height()
+                      - $(document.getElementById("pageHeading")).outerHeight(true)
+                      - $(document.getElementById("navigation")).outerHeight(true)
+                      - $(document.getElementById("firstRow")).outerHeight(true)
+                      - 25 );
+        }
+        
+        $(document.getElementById("chartImage")).outerHeight($(document.getElementById("secondRow")).height() * 2 / 3);
+        $(".secondRowContent").css("padding-top", ( $(document.getElementById("chartImage")).height() * 2 / 3 ) + "px");
+        
+        if( viewport().width < 993 ) {
+          $(".secondRowContent").css({"padding-top": "16px", "padding-bottom": "16px"});
+        }
+      }
+    
+    </script>
+</html>
